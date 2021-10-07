@@ -1,0 +1,26 @@
+.page {
+  font-size: 16px;
+  line-height: 150%;
+  font-family: $fontFamily;
+  height: 100%;
+  &__wrapper {
+    min-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__content {
+    flex: 1 1 100%;
+  }
+}
+.hidden {
+  display: none;
+}
+.lock {
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}

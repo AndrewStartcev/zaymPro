@@ -1,0 +1,25 @@
+//* ###### Переменные стилей ##############
+//? ====== Подключение шрифтов ============
+$fontFamily: "Arial", sans-serif;
+
+//? ====== Контейнер ======================
+$maxWidth: 1920;
+$maxWidthContainer: 1420;
+$md0: $maxWidthContainer + 10;
+$md1: 1199.98;
+$md2: 767.98;
+
+//? ====== Цвета ==========================
+$black: #000;
+$white: #FFFFFF;
+$primary: #3F78A7;
+$primary-light:#508CBD;
+$primary-bg-leniar: linear-gradient(90deg, #004E8F 0%, #59B5E2 96.88%);
+$primaty-border-leniar: linear-gradient(90deg, #115E9A 0%, #4EA9D8 98.68%);
+$accent-1: #E5BC7F;
+$accent-1-ligh: #FCF29E
+
+
+//? ====== Наборы стилей ==================
+
+//? ====== Типографика ====================
