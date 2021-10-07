@@ -7,8 +7,8 @@ const concat       = require('gulp-concat');
 const browserSync  = require('browser-sync').create();
 const uglify       = require('gulp-uglify-es').default;
 const imagemin     = require('gulp-imagemin');
-const webpHTML     = require('gulp-webp-html');
-const webpImg      = require('gulp-webp');
+// const webpHTML     = require('gulp-webp-html');
+// const webpImg      = require('gulp-webp');
 const fileinclude = require('gulp-file-include');
 const htmlhint = require("gulp-htmlhint");
 const htmlbeautify = require('gulp-html-beautify');
@@ -53,7 +53,7 @@ function htmlRun() {
 				prefix: '@@',
 				basepath: '@file'
 			}))
-			.pipe(webpHTML())
+			// .pipe(webpHTML())
 			.pipe(htmlhint())
 			.pipe(htmlbeautify(options))
 			.pipe(dest('../dist'));
