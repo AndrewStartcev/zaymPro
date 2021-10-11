@@ -1,0 +1,139 @@
+.conditions {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 70px;
+  &__container {
+    transform: translateY(70px);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  &__cover {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    margin-right: 70px;
+  }
+
+  &__content {
+    flex: 0 0 570px;
+    align-self: center;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 130%;
+  }
+
+  &__list {
+    margin-top: 50px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 24px;
+    line-height: 140%;
+    &::before {
+      content: '';
+      display: inline-flex;
+      flex: 0 0 30px;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      margin-top: -3px;
+      background: url('../img/icons/entypo_check.svg') center center / contain no-repeat;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__control {
+    margin-top: 50px;
+  }
+
+  &__btn {
+    padding: 17px;
+    font-size: 20px;
+    line-height: 26px;
+    border-radius: 20px;
+  }
+
+  &__subtext {
+    margin-top: 20px;
+    max-width: 330px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media (max-width: $md1+px) {
+  .conditions {
+    padding: 70px 0;
+    margin-bottom: 0px;
+    &__container {
+      transform: translateY(0);
+    }
+    &__cover {
+     display: none;
+    }
+
+    &__content {
+      flex: 0 0 570px;
+      align-self: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__item {
+      justify-content: center;
+    }
+    &__control {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@media (max-width: $md2+px) {
+  .conditions {
+    &__container {
+      padding: 0 15px;
+    }
+    &__content {
+      flex: 0 0 auto;
+      max-width: 570px;
+      width: 100%;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 130%;
+    }
+
+    &__item {
+      font-size: 18px;
+      line-height: 140%;
+      &::before {
+        margin: 0;
+        margin-right: 10px;
+      }
+    }
+    &__control {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__btn {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.btn {
+  padding: 17px 45px;
+  background: $primary;
+  border: 1px solid $primary;
+  color: $white;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  @media (min-width: $md1 + px) {
+    &:hover {
+      background: $white;
+      color: $primary;
+    }
+  }
+  &:active {
+    background: $white;
+    color: $primary;
+  }
+  &--transparent {
+    background: transparent;
+    color: $primary;
+    @media (min-width: $md1 + px) {
+      &:hover {
+        background: $primary;
+        color: $white;
+      }
+    }
+    &:active {
+      background: $primary;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: $md2+px) {
+  .btn {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 17px;
+  }
+}

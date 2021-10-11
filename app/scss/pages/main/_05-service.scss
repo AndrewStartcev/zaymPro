@@ -1,0 +1,144 @@
+.service {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  padding-bottom: -70px;
+  margin-bottom: 70px;
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__content {
+    padding-top: 120px;
+    flex: 0 0 670px;
+    margin-right: 30px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 130%;
+  }
+
+  &__text {
+    margin-top: 40px;
+    font-size: 28px;
+    line-height: 140%;
+    p {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__numbers {
+    transform: translateY(70px);
+    flex: 0 0 442px;
+    padding: 80px 86px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+  }
+
+  &__number {
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 56px;
+      line-height: 73px;
+      color: $primary;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+}
+@media (max-width: $md1+px) {
+  .service {
+    padding-bottom: -50px;
+    margin-bottom: 50px;
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__content {
+      padding-top: 100px;
+      flex: 0 0 auto;
+      margin-right: 0px;
+      text-align: center;
+    }
+
+    &__numbers {
+      transform: translateY(50px);
+      flex: 0 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 100px;
+      text-align: center;
+    }
+
+    &__number {
+      margin-bottom: 0px;
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media (max-width: $md2+px) {
+  .service {
+    padding-bottom: -40px;
+    margin-bottom: 40px;
+    &__container {
+      padding: 0 15px;
+    }
+
+    &__content {
+      padding-top: 70px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 130%;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 140%;
+      margin-top: 30px;
+    }
+
+    &__numbers {
+      width: 100%;
+      transform: translateY(50px);
+      flex-direction: column;
+      padding: 50px 10px;
+    }
+
+    &__number {
+      margin-bottom: 50px;
+      margin-right: 0px;
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+      h3 {
+        font-size: 40px;
+        line-height: 52px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+  }
+}

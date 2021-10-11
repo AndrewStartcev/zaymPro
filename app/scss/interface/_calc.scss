@@ -1,0 +1,141 @@
+.index-calc {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  &__amounts {
+    display: flex;
+  }
+
+  &__amount {
+    max-width: 150px;
+    width: 100%;
+    text-align: right;
+    border-radius: 8px;
+    background: $white;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  &__item {
+    margin-top: 33px;
+    margin-bottom: 23px;
+  }
+
+  &__range {
+    &.ui-widget.ui-widget-content {
+      background: #FFFFFF;
+      border-radius: 50px;
+      border: none;
+    }
+    &.ui-slider-horizontal {
+      height: 11px;
+    }
+    &.ui-slider-horizontal .ui-slider-handle {
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      top: 50%;
+      margin-top: -18.5px;
+      background: $primary;
+      border: none;
+      cursor: grab;
+          &:active {
+            cursor: grabbing;
+          }
+    }
+    .ui-widget-header {
+      background: $primary-grad;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__value {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(33, 33, 37, 0.7);
+  }
+
+  &__control {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  &__subtext {
+    max-width: 331px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: $md2+px) {
+  .index-calc {
+    &__name {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__amount {
+      max-width: 117px;
+      padding: 3px 5px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__range {
+      &.ui-slider-horizontal {
+        height: 8px;
+      }
+      &.ui-slider-horizontal .ui-slider-handle {
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+      }
+    }
+
+    &__value {
+      font-size: 14px;
+      line-height: 17px
+    }
+
+    &__control {
+      margin-top: 28px;
+      padding: 0 5px;
+      width: 100%;
+    }
+
+    &__btn {
+      width: 100%;
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+
+}

@@ -1,22 +1,30 @@
 //* ###### Главный Scss-файл ######
-
 //? ====== Переменные =============================
-@import "_base.scss";
+@import "base";
 
 //? ====== Обнуление стилей =======================
-@import "_reset.scss";
+@import "reset";
 
 //? ====== Oбщие параметры ========================
-@import "_site.scss";
+@import "site";
 
 //? ===== Оcновная сетка ==========================
-@import "_grid.scss";
+@import "grid";
 
 //? ====== Oбщие стили ============================
+@import "interface/button"; // Кнопки
+
+@import "interface/calc";   // Калькулятор
 @import "interface/header"; // Шапка сайта
 @import "interface/footer"; // Подвал сайта
-
-@import "interface/_button.scss";
-@import "interface/_form.scss";
-
 //? ====== Блоки и страницы ======================
+// Главная страница
+@import "pages/main/01-main";
+@import "pages/main/02-get-money";
+@import "pages/main/03-conditions";
+@import "pages/main/04-why";
+@import "pages/main/05-service";
+@import "pages/main/06-faq";
+@import "pages/main/07-order";
+@import "interface/form";
+@import "pages/offer";

@@ -1,0 +1,229 @@
+.faq {
+  padding: 100px 0;
+  &__title {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 130%;
+  }
+
+  &__body {
+    margin-top: 70px;
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
+
+  &__links {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__link {
+    flex: 0 0 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      .faq__name {
+        color: $primary;
+      }
+    }
+  }
+  &__name {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 140%;
+    transition: 0.3s;
+  }
+}
+
+.faq-accordion {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all ease 0.3s;
+  &__header {
+    padding: 30px 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 140%;
+    transition: all ease 0.3s;
+    h3 {
+      display: inline;
+      width: 80%;
+    }
+  }
+
+  &__close {
+    -webkit-box-flex: 0;
+    flex: 0 0 35px;
+    margin-left: 10px;
+    width: 33px;
+    height: 33px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #FFFFFF;
+    border-radius: 5px;
+    &::after, &::before {
+      content: "";
+      display: block;
+      width: 33px;
+      height: 5px;
+      border-radius: 30px;
+      background: $primary;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: all 0.3s ease 0s;
+      transition: all 0.3s;
+    }
+    &::before {
+      transform: translate(-50%, -50%) rotate(-0deg);
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+
+  &__content {
+    height: 0;
+    padding: 0 50px;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 140%;
+    transition: height linear .2s, padding-top linear .2s, padding-bottom linear .2s;
+    p {
+      padding-bottom: 10px;
+    }
+  }
+  &.js-accordion--open {
+    .faq-accordion__close {
+      &::before {
+        background: $red;
+      }
+      &::after {
+        background: $red;
+        transform: translate(-50%, -50%) rotate(180deg);
+      }
+    }
+    .faq-accordion__content {
+      height: auto;
+      padding-top: 10px;
+      padding-bottom: 50px;
+
+    }
+  }
+}
+@media (max-width: $md1+px) {
+  .faq {
+    padding: 100px 0;
+    .container {
+      padding: 0 15px;
+    }
+    &__title {
+     width: 90%;
+    }
+
+    &__body {
+      margin-top: 50px;
+    }
+
+    &__links {
+      margin-top: 70px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &__link {
+      flex: 0 0 177px;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .faq-accordion {
+    &__header {
+      padding: 30px 20px;
+    }
+
+    &__content {
+      padding: 0 20px;
+    }
+  }
+}
+@media (max-width: $md2+px) {
+  .faq {
+    padding: 70px 0;
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-size: 32px;
+      line-height: 130%;
+    }
+
+    &__body {
+      margin-top: 70px;
+    }
+
+    &__links {
+      margin-top: 50px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__link {
+      flex: 0 0 auto;
+      margin-right: 0px;
+      margin-bottom: 50px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .faq-accordion {
+    &__header {
+      padding: 30px 15px;
+      h3 {
+        font-size: 20px;
+        line-height: 140%;
+      }
+    }
+    &__close {
+      &::before, &::after {
+        width: 20px;
+        height: 3px;
+      }
+    }
+
+    &__content {
+      padding: 0 15px;
+      font-size: 16px;
+      line-height: 140%;
+    }
+    &.js-accordion--open {
+      .faq-accordion__content {
+        height: auto;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+      }
+    }
+  }
+}

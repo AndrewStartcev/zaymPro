@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Нужны деньги? - ZaymPro</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css?ver=1.6.6" />
+</head>
+
+<body class="page" id="top">
+  <div class="page__wrapper">
+    <span class="cricle cricle--form-1"></span>
+    <span class="cricle cricle--form-2"></span>
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <a href="index.html" class="header__logo">
+            <img src="assets/img/logo.svg" alt="">
+          </a>
+          <!-- /.header__logo -->
+        </div>
+        <!-- /.header__body -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- END header -->
+
+    <main class="page__content">
+      <section class="steps">
+        <div class="container steps__container">
+          <div class="steps__body steps__body--step-1 ">
+            <div class="steps__item steps__item--active">
+              <div class="steps__number">
+                <span>01</span>
+              </div>
+            </div>
+            <!-- /.steps__item -->
+            <div class="steps__item">
+              <div class="steps__number">
+                <span>02</span>
+              </div>
+            </div>
+            <!-- /.steps__item -->
+            <div class="steps__item">
+              <div class="steps__number">
+                <span>03</span>
+              </div>
+            </div>
+            <!-- /.steps__item -->
+            <div class="steps__item">
+              <div class="steps__number">
+                <span>04</span>
+              </div>
+            </div>
+            <!-- /.steps__item -->
+          </div>
+        </div>
+        <!-- /.container steps__container -->
+      </section>
+      <!-- /.steps -->
+
+      <section class="form-block">
+        <div class="container">
+          <h2 class="form-block__title">Контактная информация</h2>
+          <!-- /.form-block__title -->
+          <form action="#" class="form-block__item">
+            <div class="input">
+              <label for="user_name" class="input__label">Ваше имя<span>*</span>
+              </label>
+              <input type="text" name="user_name" id="user_name" class="input__item" placeholder="Имя" required>
+            </div>
+            <div class="input">
+              <label for="user_tel" class="input__label">Номер телефона<span>*</span>
+              </label>
+              <input type="tel" name="user_tel" id="user_tel" class="input__item" placeholder="+7(___)___-__-__" required>
+            </div>
+            <div class="input">
+              <label for="user_credits" class="input__label">Брали кредит?</label>
+              <select name="user_credits" id="user_credits" class="input__select">
+                <option value="Никогда не брал(а) кредитов">Никогда не брал(а) кредитов</option>
+                <option value="Никогда не допускал(а) прocpoчек">Никогда не допускал(а) прocpoчек</option>
+                <option value="Закрытые пpocpочки">Закрытые пpocpочки</option>
+                <option value="Текущие пpocpoчки">Текущие пpocpoчки</option>
+                <option value="Paбoтaют кoллeктopы">Paбoтaют кoллeктopы</option>
+              </select>
+            </div>
+            <div class="input">
+              <label for="user_email" class="input__label">Email<span>*</span>
+              </label>
+              <input type="email" name="user_email" id="user_email" class="input__item" placeholder="ivanov@gmail.com" required>
+            </div>
+            <div class="form-block__range index-calc" id="form-money-calc">
+              <div class="index-calc__top">
+                <div class="index-calc__name">Сумма кредита:</div>
+                <div class="index-calc__amounts">
+                  <input type="text" readonly class="index-calc__amount">
+                </div>
+              </div>
+              <div class="index-calc__item">
+                <div class="index-calc__range"></div>
+              </div>
+              <div class="index-calc__footer">
+                <div class="index-calc__value" id="js-form-money-calc-min">1 000 ₽</div>
+                <div class="index-calc__value" id="js-form-money-calc-max">500 000 ₽</div>
+              </div>
+            </div>
+            <div class="form-block__range index-calc" id="form-date-calc">
+              <div class="index-calc__top">
+                <div class="index-calc__name">Выберете срок:</div>
+                <div class="index-calc__amounts">
+                  <input type="text" readonly class="index-calc__amount">
+                </div>
+              </div>
+              <div class="index-calc__item">
+                <div class="index-calc__range"></div>
+              </div>
+              <div class="index-calc__footer">
+                <div class="index-calc__value" id="js-form-date-calc-min">7 дней</div>
+                <div class="index-calc__value" id="js-form-date-calc-max">30 дней</div>
+              </div>
+            </div>
+            <label for="user_policy" class="checbox">
+              <input type="checkbox" name="user_policy" id="user_policy" class="checbox__input" checked>
+              <span class="checbox__item"></span>
+              <p class="checbox__text">Даю свое согласие на обработку персональных данных и на получение рекламных материалов</p>
+            </label>
+            <div class="form-block__footer">
+              <div class="form-block__info">
+                <span>*</span>Информация обязательная для заполнения
+              </div>
+              <a href="form-2.html" class="btn form-block__btn">Продолжить</a>
+            </div>
+          </form>
+          <!-- /.form-block__item -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.form-block -->
+    </main>
+    <!-- END page__content -->
+
+    <footer class="footer" id="footer">
+      <span class="cricle cricle--9"></span>
+      <div class="container">
+        <div class="footer__body">
+          <a href="index.html" class="footer__logo">
+            <img src="assets/img/logo.svg" alt="">
+          </a>
+          <!-- /.footer__logo -->
+          <div class="footer___content">
+            <p>
+              <b>Важно! Предоплату за выдачу займа берут только мошенники!</b>
+            </p>
+            <p>Услуги на проекте «Zaym Pro» оказывает юридическое лицо: ООО «ФИНГРУП» ОГРН: 1206300059162</p>
+            <p>Адрес: 443026, Самарская область, город Самара, поселок Управленческий, улица Ногина, дом 10, литер "К"</p>
+            <p>Время работы службы поддержки с 10:00 до 20:00. т. 8 (800) 300-56-41 / e-mail: client@zaympro.ru</p>
+            <p>ООО «ФИНГРУП» Находится в реестре операторов, осуществляющих обработку персональных данных Приказ № 134 от 22.10.2020</p>
+            <p>Проект осуществляет только подбор компаний для клиентов, а именно, между клиентом который желает получить деньги, и кредитным учреждением, а также некредитными финансовыми организациями в случаях, определенных федеральными законами об их деятельности, которые занимаются выдачей денег. Все партнеры проекта находятся в реестре Центробанка Российской Федерации. Проект не является финансовым учреждением, банком или кредитором, и не несёт ответственности за любые заключенные договоры кредитования или условия. Чтобы оформить заявку на получение денег, Вам необходимо пройти регистрацию и аутентификацию на проекте.</p>
+            <p>Сервис «Zaym Pro» использует куки для предоставления услуг. Условия хранения или доступа к куки Вы можете настроить в своём браузере.</p>
+            <p>Внимание! Услуга обработки заявки является ПЛАТНОЙ и составляет 399 (триста девяносто девять) рублей каждый месяц подписки. Применяются Рекуррентные платежи. Услуга далее по сайту - «Активация сервиса». Активация сервиса не гарантирует вам получение кредита! Если услуга перестала быть актуальна для Вас (вы получили займ или более не нуждаетесь в займах), вы можете самостоятельно отписаться от услуги в любой момент - <a href="#">Отменить подписку</a>.</p>
+          </div>
+          <!-- /.footer___content -->
+          <div class="footer__info">
+            <div class="footer__age">
+              <img src="assets/img/icons/18+.svg" alt="">
+            </div>
+            <div class="footer__card">
+              <img src="assets/img/parthers/visa-gray.png" alt="">
+            </div>
+          </div>
+          <!-- /.footer__info -->
+        </div>
+        <!-- /.footer__body -->
+      </div>
+    </footer>
+    <!-- END footer -->
+  </div>
+  <!-- END page__wrapper -->
+
+  <!-- scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7-beta.23/jquery.inputmask.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+  <script src="assets/js/main.min.js"></script>
+  <!-- END scripts -->
+</body>
+
+</html>

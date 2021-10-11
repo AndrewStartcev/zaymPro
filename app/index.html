@@ -4,60 +4,389 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок</title>
+    <title>Нужны деньги? - ZaymPro</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="assets/css/style.css?ver=1.6.6" />
-
   </head>
   <body class="page" id="top">
     <div class="page__wrapper" >
+      <span class="cricle cricle--1"></span>
+      <span class="cricle cricle--2"></span>
+      <span class="cricle cricle--3"></span>
+      <span class="cricle cricle--4"></span>
+      <span class="cricle cricle--5"></span>
+      <span class="cricle cricle--6"></span>
+      <span class="cricle cricle--7"></span>
+      <span class="cricle cricle--8"></span>
       <header class="header">
-
+        <div class="container">
+          <div class="header__body">
+            <a href="#top" class="header__logo">
+              <img src="assets/img/logo.svg" alt="">
+            </a>
+            <!-- /.header__logo -->
+            <div class="header__menu">
+              <nav class="header__nav">
+                <ul class="header__list">
+                  <li class="header__item"><a href="#get-money">Как получить</a></li>
+                  <li class="header__item"><a href="#conditions">Условия получения</a></li>
+                  <li class="header__item"><a href="#why">Почему мы?</a></li>
+                  <li class="header__item"><a href="#service">О сервисе</a></li>
+                  <li class="header__item"><a href="#faq">Вопросы и ответы</a></li>
+                </ul>
+              </nav>
+              <a href="form-1.html" class="btn btn--transparent header__btn">Оформить заявку</a>
+              <a href="tel:+78002005050" class="header__tel">+7 (800) 200-50-50</a>
+            </div>
+            <!-- /.header__menu -->
+            <button class="header__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <!-- /.header__burger -->
+          </div>
+          <!-- /.header__body -->
+        </div>
+        <!-- /.container -->
       </header>
       <!-- END header -->
 
       <main class="page__content">
+        <section class="main">
+          <div class="main__content">
+            <div class="container">
+              <h1 class="main__title">Нужны деньги?</h1>
+              <p class="main__descr">Получи <span>под 0%</span> прямо сейчас</p>
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.main__content -->
+          <div class="main__form">
+            <div class="container">
+              <div class="main__block">
+                <p class="main__subtitle">Заполни заявку сейчас и получи деньги через 10 минут</p>
+                <div class="main__item index-calc" id="main-calc">
+                  <div class="index-calc__top">
+                    <div class="index-calc__name">Сумма займа:</div>
+                    <div class="index-calc__amounts">
+                      <input type="text" readonly class="index-calc__amount">
+                    </div>
+                  </div>
+                  <div class="index-calc__item">
+                    <div class="index-calc__range"></div>
+                  </div>
+                  <div class="index-calc__footer">
+                    <div class="index-calc__value" id="js-index-calc-min">1 000 ₽</div>
+                    <div class="index-calc__value" id="js-index-calc-max">100 000 ₽</div>
+                  </div>
+                  <div class="index-calc__control">
+                    <a href="form-1.html" class="btn index-calc__btn">Оформить заявку</a>
+                    <p class="index-calc__subtext">Все данные зашифрованы по стандарту DES Комиссия сервиса 399 ₽ за каждый месяц по подписке</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.main__form -->
+        </section>
 
+        <section class="get-money" id="get-money">
+          <div class="container">
+            <h2 class="get-money__title">Как получить деньги?</h2>
+            <p class="get-money__subtitle">Вы сможете получить деньги самым удобным для вас способом</p>
+            <div class="get-money__body">
+              <div class="get-money__item">
+                <div class="get-money__icon">
+                  <img src="assets/img/icons/iconoir_calculator.svg" alt="">
+                </div>
+                <div class="get-money__content">
+                  <h3 class="get-money__name">Выберете сумму</h3>
+                  <p class="get-money__text">Необходимо выбрать сумму займа, опираясь на ваши финансовые возможности</p>
+                </div>
+              </div>
+              <!-- /.get-money__item -->
+              <div class="get-money__item">
+                <div class="get-money__icon">
+                  <img src="assets/img/icons/fluent_document-bullet-list-20-regular.svg" alt="">
+                </div>
+                <div class="get-money__content">
+                  <h3 class="get-money__name">Заполните анкету</h3>
+                  <p class="get-money__text">Вносите только достоверные данные, как указано в паспорте</p>
+                </div>
+              </div>
+              <!-- /.get-money__item -->
+              <div class="get-money__item">
+                <div class="get-money__icon">
+                  <img src="assets/img/icons/postal.svg" alt="">
+                </div>
+                <div class="get-money__content">
+                  <h3 class="get-money__name">Получите подтверждение</h3>
+                  <p class="get-money__text">Решение по заявке занимает не более 10 минут</p>
+                </div>
+              </div>
+              <!-- /.get-money__item -->
+              <div class="get-money__item">
+                <div class="get-money__icon">
+                  <img src="assets/img/icons/money.svg" alt="">
+                </div>
+                <div class="get-money__content">
+                  <h3 class="get-money__name">Получите деньги</h3>
+                  <p class="get-money__text">После проверки заявки, вы сможете получить деньги любым удобным способом</p>
+                </div>
+              </div>
+              <!-- /.get-money__item -->
+            </div>
+            <!-- /.get-money__body -->
+          </div>
+          <!-- /.container -->
+        </section>
+        <!-- /.get-money -->
+
+        <section class="conditions" id="conditions">
+          <div class="container conditions__container">
+            <div class="conditions__cover">
+              <img src="assets/img/image_balance.png" alt="">
+            </div>
+            <!-- /.conditions__cover -->
+            <div class="conditions__content">
+              <h2 class="conditions__title">Условия получения займа</h2>
+              <ul class="conditions__list">
+                <li class="conditions__item">Возраст от 18 до 70 лет</li>
+                <li class="conditions__item">Процентная ставка от 0% на первый займ</li>
+                <li class="conditions__item">Территория предоставления услуги — все регионы России</li>
+              </ul>
+              <div class="conditions__control">
+                <a href="form-1.html" class="btn conditions__btn">Оформить заявку</a>
+                <p class="conditions__subtext">Все данные зашифрованы по стандарту DES Комиссия сервиса 399 ₽ за каждый месяц по подписке</p>
+              </div>
+            </div>
+            </div>
+            <!-- /.conditions__content -->
+
+          <!-- /.container -->
+        </section>
+        <!-- /.conditions -->
+
+        <section class="why" id="why">
+          <div class="container">
+            <h2 class="why__title">Почему мы?</h2>
+            <p class="why__subtitle">Мы помогаем с займом даже с плохой кредитной историей, поэтому 4 из 5 клиентов возвращаются к нам</p>
+            <div class="why__body">
+              <div class="why__item">
+                <div class="why__icon">
+                  <img src="assets/img/icons/003-stopwatch-1.svg" alt="">
+                </div>
+                <div class="why__text"><b>10 минут</b> <br>и деньги у вас</div>
+              </div>
+              <div class="why__item">
+                <div class="why__icon">
+                  <img src="assets/img/icons/001-percentage.svg" alt="">
+                </div>
+                <div class="why__text"><b>0% в день</b> <br>на первый кредит</div>
+              </div>
+              <div class="why__item">
+                <div class="why__icon">
+                  <img src="assets/img/icons/005-package.svg" alt="">
+                </div>
+                <div class="why__text"><b>99%</b> <br>вероятность одобрения</div>
+              </div>
+              <div class="why__item">
+                <div class="why__icon">
+                  <img src="assets/img/icons/006-shield.svg" alt="">
+                </div>
+                <div class="why__text"><b>Ваши данные</b> <br>надёжно защищены</div>
+              </div>
+            </div>
+            <!-- /.why__body -->
+          </div>
+          <!-- /.container -->
+        </section>
+        <!-- /.why -->
+
+        <section class="service" id="service">
+          <div class="container service__container">
+            <div class="service__content">
+              <h2 class="service__title">О сервисе</h2>
+              <div class="service__text">
+                <p>Zaym Pro — это уникальный сервис для получения микрозайма онлайн. Работаем со всеми клиентами — не важно, какая у вас кредитная история и имеются ли текущие просрочки.</p>
+                <p>На основе заполненной формы сервис в автоматическом режиме подготовит самые лучшие и выгодные кредитные предложения.</p>
+              </div>
+            </div>
+            <!-- /.service__content -->
+            <div class="service__numbers">
+              <div class="service__number"><h3>986</h3><p>Займов в день</p></div>
+              <div class="service__number"><h3>79 389</h3><p>Одобренных займов</p></div>
+              <div class="service__number"><h3>500</h3><p>млн ₽ выдано</p></div>
+            </div>
+            <!-- /.service__numbers -->
+          </div>
+          <!-- /.container service__container -->
+        </section>
+        <!-- /.service -->
+
+        <section class="faq" id="faq">
+          <div class="container">
+            <h2 class="faq__title">Часто задаваемые вопросы</h2>
+            <div class="faq__body" data-block="accordion" id="faq-accordion">
+              <div class="faq__accordion faq-accordion accordion__item js-accordion--open">
+                <div class="faq-accordion__header accordion__title js-accordion--open">
+                  <h3>Какова полная стоимость займа?</h3>
+                  <button class="faq-accordion__close"></button>
+                </div>
+                <div class="faq-accordion__content accordion__content js-accordion--open">
+                  <p>Пример расчёта:</p>
+                  <p>Займ в размере 10 000 рублей выдан на 61 дней с пролонгацией. В году 365 дней, по договору ставка составляет 1% в день (годовая ставка, соответственно будет равна 365%). Сумма процентов за год составляет 36 500 ₽ (10 000*365% = 36 500), за 1 день 100 ₽ (36 500/365 = 100), за 61 дней соответственно 6 100 ₽ (100*61 = 6100). Общая сумма платежа составляет 16 100 ₽ (10 000 ₽ основной долг + 6 100 ₽ проценты).</p>
+                  <p>ПСК (полная стоимость кредита) в процентах составляет от 0% до 365% годовых.</p>
+                  <p>Минимальный срок погашения займа 61 день. Максимальный срок погашения займа 365 дней.</p>
+                </div>
+              </div>
+              <!-- /.main-faq__accordion -->
+              <div class="faq__accordion faq-accordion accordion__item">
+                <div class="faq-accordion__header accordion__title">
+                  <h3>Как погасить займ?</h3>
+                  <button class="faq-accordion__close"></button>
+                </div>
+                <div class="faq-accordion__content accordion__content">
+                  <p>Вы можете погасить займ наличными деньгами, платежом с банковской карты, банковским переводом</p>
+                </div>
+              </div>
+              <!-- /.main-faq__accordion -->
+              <div class="faq__accordion faq-accordion accordion__item">
+                <div class="faq-accordion__header accordion__title">
+                  <h3>Каковы подствия при просрочке?</h3>
+                  <button class="faq-accordion__close"></button>
+                </div>
+                <div class="faq-accordion__content accordion__content">
+                  <p>В случае невозвращения в условленный срок суммы кредита или суммы процентов за пользование заёмными средствами, кредитор будет вынужден начислить штраф за просрочку платежа. Большинство кредиторов идут на уступки и дают 3 дополнительных рабочих дня для оплаты. Они предусмотрены на случай, к примеру, если банковский перевод занял больше времени, чем обычно. Однако, в случае неполучения от вас какой-либо реакций в течение продолжительного времени, будет начислен штраф за просрочку срока погашения размером в среднем 0,10% от первоначальной суммы для займов, 0,03% от суммы задолженности в среднем для потребительских кредитов и кредитных карт.</p>
+                  <p>При несоблюдении вами условий по погашению кредитов и займов, данные о вас могут быть переданы в реестр должников, а задолженность — коллекторскому агентству для взыскания долга. О всех приближающихся сроках платежа кредитор своевременно информирует вас по СМС или электронной почте. Рекомендуем вам вносить платёж в день получения данных напоминаний. Погашая задолженность в срок, вы формируете хорошую кредитную историю, что повышает ваши шансы в дальнейшем получить кредит на более выгодных условиях. Предложение не является оффертой. Конечные условия уточняйте при прямом общении с кредиторами.</p>
+                </div>
+              </div>
+              <!-- /.main-faq__accordion -->
+              <div class="faq__accordion faq-accordion accordion__item">
+                <div class="faq-accordion__header accordion__title">
+                  <h3>Как это работает?</h3>
+                  <button class="faq-accordion__close"></button>
+                </div>
+                <div class="faq-accordion__content accordion__content">
+                  <p>Заполните анкету, получите одобрение, заберите деньги выбранным способом.</p>
+                </div>
+              </div>
+              <!-- /.main-faq__accordion -->
+            </div>
+            <div class="faq__links">
+              <a href="#" class="faq__link">
+                <span class="faq__icon">
+                  <img src="assets/img/icons/free-icon-pdf-file-3022204.svg" alt="">
+                </span>
+                <span class="faq__name">Публичная оферта</span>
+              </a>
+              <a href="#" class="faq__link">
+                <span class="faq__icon">
+                  <img src="assets/img/icons/free-icon-pdf-file-3022204.svg" alt="">
+                </span>
+                <span class="faq__name">Политика обработки</span>
+              </a>
+              <a href="#" class="faq__link">
+                <span class="faq__icon">
+                  <img src="assets/img/icons/free-icon-pdf-file-3022204.svg" alt="">
+                </span>
+                <span class="faq__name">Согласие на обработку</span>
+              </a>
+              <a href="#" class="faq__link">
+                <span class="faq__icon">
+                  <img src="assets/img/icons/free-icon-pdf-file-3022204.svg" alt="">
+                </span>
+                <span class="faq__name">Согласие на рекуррентные платежи</span>
+              </a>
+            </div>
+          </div>
+        </section>
+         <!-- /.faq -->
+
+         <section class="order">
+           <div class="container">
+              <h2 class="order__title">Заполни заявку сейчас</h2>
+              <p class="order__tex">И получи деньги через <span>10 минут</span></p>
+              <div class="order__item index-calc" id="order-calc">
+                <div class="index-calc__top">
+                  <div class="index-calc__name">Сумма займа:</div>
+                  <div class="index-calc__amounts">
+                    <input type="text" readonly class="index-calc__amount">
+                  </div>
+                </div>
+                <div class="index-calc__item">
+                  <div class="index-calc__range"></div>
+                </div>
+                <div class="index-calc__footer">
+                  <div class="index-calc__value" id="js-order-calc-min">1 000 ₽</div>
+                  <div class="index-calc__value" id="js-order-calc-max">100 000 ₽</div>
+                </div>
+                <div class="index-calc__control">
+                  <a href="form-1.html" class="btn index-calc__btn">Оформить заявку</a>
+                  <p class="index-calc__subtext">Все данные зашифрованы по стандарту DES Комиссия сервиса 399 ₽ за каждый месяц по подписке</p>
+                </div>
+              </div>
+              <h3 class="order__subtitle">Любым удобным для вас способом</h3>
+              <div class="order__cards">
+                <div class="order__card"><img src="assets/img/parthers/mir.png" alt=""></div>
+                <div class="order__card"><img src="assets/img/parthers/mastercard.png" alt=""></div>
+                <div class="order__card"><img src="assets/img/parthers/yandex.png" alt=""></div>
+                <div class="order__card"><img src="assets/img/parthers/visa.png" alt=""></div>
+                <div class="order__card"><img src="assets/img/parthers/qiwi.png" alt=""></div>
+              </div>
+           </div>
+         </section>
+         <!-- /.order -->
       </main>
       <!-- END page__content -->
 
       <footer class="footer" id="footer">
-
+        <span class="cricle cricle--9"></span>
+        <div class="container">
+          <div class="footer__body">
+            <a href="" class="footer__logo">
+              <img src="assets/img/logo.svg" alt="">
+            </a>
+            <!-- /.footer__logo -->
+            <div class="footer___content">
+              <p><b>Важно! Предоплату за выдачу займа берут только мошенники!</b></p>
+              <p>Услуги на проекте «Zaym Pro» оказывает юридическое лицо: ООО «ФИНГРУП» ОГРН: 1206300059162</p>
+              <p>Адрес: 443026, Самарская область, город Самара, поселок Управленческий, улица Ногина, дом 10, литер "К"</p>
+              <p>Время работы службы поддержки с 10:00 до 20:00. т. 8 (800) 300-56-41 / e-mail: client@zaympro.ru</p>
+              <p>ООО «ФИНГРУП» Находится в реестре операторов, осуществляющих обработку персональных данных Приказ № 134 от 22.10.2020</p>
+              <p>Проект осуществляет только подбор компаний для клиентов, а именно, между клиентом который желает получить деньги, и кредитным учреждением, а также некредитными финансовыми организациями в случаях, определенных федеральными законами об их деятельности, которые занимаются выдачей денег. Все партнеры проекта находятся в реестре Центробанка Российской Федерации. Проект не является финансовым учреждением, банком или кредитором, и не несёт ответственности за любые заключенные договоры кредитования или условия. Чтобы оформить заявку на получение денег, Вам необходимо пройти регистрацию и аутентификацию на проекте.</p>
+              <p>Сервис «Zaym Pro» использует куки для предоставления услуг. Условия хранения или доступа к куки Вы можете настроить в своём браузере.</p>
+              <p>Внимание! Услуга обработки заявки является ПЛАТНОЙ и составляет 399 (триста девяносто девять) рублей каждый месяц подписки. Применяются Рекуррентные платежи. Услуга далее по сайту - «Активация сервиса». Активация сервиса не гарантирует вам получение кредита! Если услуга перестала быть актуальна для Вас (вы получили займ или более не нуждаетесь в займах), вы можете самостоятельно отписаться от услуги в любой момент - <a href="#">Отменить подписку</a>.</p>
+            </div>
+            <!-- /.footer___content -->
+            <div class="footer__info">
+              <div class="footer__age">
+                <img src="assets/img/icons/18+.svg" alt="">
+              </div>
+              <div class="footer__card">
+                <img src="assets/img/parthers/visa-gray.png" alt="">
+              </div>
+            </div>
+            <!-- /.footer__info -->
+          </div>
+          <!-- /.footer__body -->
+        </div>
       </footer>
       <!-- END footer -->
-
-
-
-      <!-- /.popup -->
-      <div class="popup" id="mainForm">
-        <div class="popup__content">
-          <div class="popup__body">
-            <button class="popup__close"></button>
-            <div class="popup-form show">
-
-              </form>
-            </div>
-            <div class="popup-loading">
-
-            </div>
-            <div class="popup-send">
-
-            </div>
-            <div class="popup-error">
-
-            </div>
-          </div>
-        </div>
-        <!-- /.popup__content -->
-      </div>
-      <!-- /.popup -->
     </div>
     <!-- END page__wrapper -->
 
     <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7-beta.23/jquery.inputmask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
     <!-- END scripts -->
   </body>
 </html>

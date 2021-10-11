@@ -1,17 +1,22 @@
+html {
+  min-height: 100%;
+}
 .page {
   font-size: 16px;
   line-height: 150%;
+  color: $black;
   font-family: $fontFamily;
-  height: 100%;
+  background: $secondary;
+  min-height: 100%;
   &__wrapper {
-    min-height: 100%;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    min-height: 100vh;
   }
   &__content {
     flex: 1 1 100%;
@@ -23,4 +28,227 @@
 .lock {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
+}
+
+.cricle {
+  display: block;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(56, 188, 247, 0.4) 0%, rgba(56, 188, 246, 0) 100%);
+  filter: blur(50px);
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  &--1 {
+    width: 1152px;
+    height: 1152px;
+    top: -25px;
+    left: calc(50% + 237px);
+    transform: translateX(-50%);
+  }
+
+  &--2 {
+    width: 1018px;
+    height: 1018px;
+    top: 197px;
+    left: calc(50% - 206px);
+    transform: translateX(-50%);
+  }
+
+  &--3 {
+    width: 842px;
+    height: 843px;
+    top: 1416px;
+    left: calc(50% - 103px);
+    transform: translateX(-50%);
+  }
+
+  &--4 {
+    width: 744px;
+    height: 745px;
+    top: 1622px;
+    left: calc(50% - 400px);
+    transform: translateX(-50%);
+  }
+
+  &--5 {
+    width: 968px;
+    height: 969px;
+    top: 2952px;
+    left: calc(50% + 300px);
+    transform: translateX(-50%);
+  }
+
+  &--6 {
+    width: 684px;
+    height: 685px;
+    top: 3268px;
+    left: calc(50% + 100px);
+    transform: translateX(-50%);
+  }
+
+  &--7 {
+    width: 1226px;
+    height: 1227px;
+    left: calc(50% - 200px);
+    transform: translateX(-50%);
+    top: 4871px;
+  }
+
+  &--8 {
+    width: 866px;
+    height: 867px;
+    left: calc(50% - 700px);
+    transform: translateX(-50%);
+    top: 5114px;
+  }
+
+  &--9 {
+    width: 526.76px;
+    height: 527.53px;
+    top: -252px;
+    left: calc(50% + 109px);
+  }
+  &--form-1 {
+    width: 1184px;
+    height: 1184px;
+    left: 609px;
+    left: calc(50% + 200px);
+    transform: translateX(-50%);
+  }
+  &--form-2 {
+    width: 1018px;
+    height: 1018px;
+    left: 134px;
+    top: 197px;
+    left: calc(50% - 192px);
+    transform: translateX(-50%);
+  }
+  &--offer-1 {
+    width: 1184px;
+    height: 1184px;
+    top: 150px;
+    left: calc(50% + 379px);
+    transform: translateX(-50%);
+  }
+  &--offer-2 {
+    width: 1018px;
+    height: 1018px;
+    top: 388px;
+    left: calc(50% - 169px);
+    transform: translateX(-50%);
+  }
+  &--offer-3 {
+    width: 1018px;
+    height: 1018px;
+    top: 1329px;
+    left: calc(50% + 208px);
+    transform: translateX(-50%);
+  }
+  &--offer-4 {
+    width: 1184px;
+    height: 1184px;
+    top: 1091px;
+    left: calc(50% - 335px);
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: $md1+px) {
+  .cricle {
+
+    &--1 {
+      width: 870px;
+      height: 871px;
+      top: 163px;
+      left: calc(50% + 239px);
+    }
+
+    &--2 {
+      width: 769px;
+      height: 769px;
+      top: 331px;
+      left: calc(50% - 172px);
+    }
+
+    &--3 {}
+
+    &--4 {}
+
+    &--5 {
+      width: 968px;
+      height: 969px;
+      top: 3845px;
+      left: calc(50%);
+      transform: translateX(-50%);
+    }
+
+    &--6 {
+      width: 684px;
+      height: 685px;
+      top: 4247px;
+      left: calc(50% - 100px);
+      transform: translateX(-50%);
+    }
+
+    &--7 {}
+
+    &--8 {}
+  }
+}
+@media (max-width: $md2+px) {
+  .cricle {
+
+    &--1 {
+      width: 720px;
+      height: 721px;
+      top: 167px;
+      left: calc(50% + 163px);
+    }
+
+    &--2 {
+      width: 636px;
+      height: 637px;
+      top: 306px;
+      left: calc(50% - 176px);
+    }
+
+    &--3 {}
+
+    &--4 {}
+
+    &--5 {
+      width: 968px;
+      height: 969px;
+      top: 2045px;
+      left: calc(50%);
+      transform: translateX(-50%);
+    }
+
+    &--6 {
+      width: 684px;
+      height: 685px;
+      top: 2247px;
+      left: calc(50% - 100px);
+      transform: translateX(-50%);
+    }
+
+    &--7 {
+      width: 576px;
+      height: 577px;
+      left: 71px;
+      top: 7253px;
+    }
+
+    &--8 {
+      width: 816px;
+      height: 817px;
+      left: 145px;
+      top: 7004px;
+    }
+    &--9 {
+      width: 331px;
+      height: 347px;
+      top: -150px;
+      left: calc(50% + 10px);
+    }
+  }
 }

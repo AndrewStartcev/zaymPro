@@ -32,21 +32,12 @@ nav,
 footer,
 header,
 section {
-  display: block;
 }
 
-html,
-body {
-  height: 100%;
-  overflow: auto;
-  overflow-x: hidden;
-}
 
 body {
   line-height: 1;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  max-width: 100%;
 }
 
 input::-ms-clear {
